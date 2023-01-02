@@ -9,11 +9,14 @@
 <body>
 
     <script>
-        display(){
-            document.getElementById("btn1");
-            document.getElementById("btn2");
+       function display(){
+            document.getElementById('resp').innerHTML+=document.getElementById('btn1').value+"<br>"
+            document.getElementById('resp').innerHTML+=document.getElementById('btn2').value+"<br>"
+            document.getElementById('resp').innerHTML+=document.getElementById('btn3').value+"<br>"
+            
         }
     </script>
+
     <h1>Robolox Automation Inc.</h1>
     
         <form>
@@ -32,7 +35,7 @@
 
                 <tr>
                     <td>Product price</td>
-                    <td></td> 
+                    <td><input type="text" name="btn3" id="btn3"></td>
                 </tr>
 
                 <tr>
@@ -43,9 +46,11 @@
                         <button type="button" name =btn id="btn" onclick="display()">Submit
                     </td>
                 </tr>
-            </table>
+                           </table>
             
         </form>
+        <div id="resp"></div>
+ 
     
 </body>
 </html>
