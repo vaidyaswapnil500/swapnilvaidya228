@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+
+    <script>
+        display(){
+            document.getElementById("btn1");
+            document.getElementById("btn2");
+        }
+    </script>
     <h1>Robolox Automation Inc.</h1>
     
         <form>
@@ -15,23 +22,26 @@
             <table border="1">
                 <tr>
                     <td>Product name</td>
+                    <td><input type="text" name="btn1" id="btn1"></td>
+
+                </tr>
+                <tr>
                     <td>Product qty</td>
-                    <td>Product price</td> 
+                    <td><input type="text" name="btn2" id="btn2"></td>
+                </tr>
+
+                <tr>
+                    <td>Product price</td>
+                    <td></td> 
+                </tr>
+
+                <tr>
+
                 </tr>
                 <tr>
-                    <td>Biscuits</td>
-                    <td>5</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Sweets</td>
-                    <td>100</td>
-                    <td>500</td>
-                </tr>
-                <tr>
-                    <td>Pens</td>
-                    <td>200</td>
-                    <td>20</td>
+                    <td style="align:center">
+                        <button type="button" name =btn id="btn" onclick="display()">Submit
+                    </td>
                 </tr>
             </table>
             
